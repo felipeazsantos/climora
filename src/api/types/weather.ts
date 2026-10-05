@@ -1,6 +1,6 @@
 import type { Clouds, Coordinates, WeatherCondition, Wind } from "./common";
 
-export interface MainWeatherData {
+export interface WeatherData {
     temp: number;
     feels_like: number;
     temp_min: number;
@@ -33,7 +33,7 @@ export interface WeatherResponse {
     coord: Coordinates;
     weather: WeatherCondition[];
     base: string;
-    main: MainWeatherData;
+    main: WeatherData;
     visibility: number;
     wind: Wind;
     rain?: Rain;
